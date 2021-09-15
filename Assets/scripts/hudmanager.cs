@@ -12,7 +12,7 @@ public class hudmanager : MonoBehaviour
     public float levelscore = 10.0f;
 
     [SerializeField] Text countdown;
-    [SerializeField] Text timespent;
+    //[SerializeField] Text timespent;
     [SerializeField] Text finalscore;
     private accelerator cond;
     private void Start()
@@ -38,8 +38,8 @@ public class hudmanager : MonoBehaviour
                 currenttime = 0;
             }
         }
-        timeelaps = startingtime - currenttime;
-        timespent.text = "Timespent : "+(timeelaps).ToString("000");
+       /* timeelaps = startingtime - currenttime;
+        timespent.text = "Timespent : "+(timeelaps).ToString("000");*/
         
     }
    

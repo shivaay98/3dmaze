@@ -12,6 +12,7 @@ public class accelerator : MonoBehaviour
     
     
     
+    
 
 
     private hudmanager hudm;
@@ -83,7 +84,8 @@ public class accelerator : MonoBehaviour
             
             hudm.final();
             winloose = true;
-            
+            movespeed = 0;
+            speed = 0;
             
             StartCoroutine(winning());
 
